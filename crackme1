@@ -1,0 +1,20 @@
+from colorama import init, Fore
+
+print(Fore.YELLOW + "CRACKME")
+print(" ")
+
+while True:
+    print(Fore.WHITE + "Nom d'utilisateur :")
+    user = input(Fore.BLUE)
+    letter = len(user)
+
+    password = str(letter) + "gfe..532_eBEd_35D@ge/d.fAG" + user + str(letter) * 2
+    print(Fore.WHITE + "Entrer le mot de passe :")
+    mdp = (input(Fore.BLUE))
+    if mdp == password:
+        print(Fore.CYAN + "Mot de passe correct")
+        break
+    else: 
+        print(Fore.RED + "Mot de passe incorrect")
+
+input(Fore.YELLOW + "appuer sur entrer pour quitter")
